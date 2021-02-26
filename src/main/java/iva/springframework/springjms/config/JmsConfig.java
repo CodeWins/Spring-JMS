@@ -13,7 +13,7 @@ import org.springframework.jms.support.converter.MessageType;
 public class JmsConfig {
 
     public  static final  String My_QUEUE = "my-hello-world";
-
+    public  static final  String My_SEND_RECEIVE_QUEUE = "replybacktome";
     @Bean
     public MessageConverter messageConverter(){
         MappingJackson2MessageConverter converter = new MappingJackson2MessageConverter();
